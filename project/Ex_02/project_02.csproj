@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C1C3080-9DB6-4778-BD83-07EC773B3666}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ex_02</RootNamespace>
+    <AssemblyName>Ex_02</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agree.Designer.cs">
+      <DependentUpon>agree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="card.Designer.cs">
+      <DependentUpon>card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cash.Designer.cs">
+      <DependentUpon>cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hyengum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hyengum.Designer.cs">
+      <DependentUpon>hyengum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie1_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie1_information.Designer.cs">
+      <DependentUpon>movie1_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie2_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie2_information.Designer.cs">
+      <DependentUpon>movie2_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie3_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie3_information.Designer.cs">
+      <DependentUpon>movie3_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie4_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie4_information.Designer.cs">
+      <DependentUpon>movie4_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie5_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie5_information.Designer.cs">
+      <DependentUpon>movie5_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie6_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie6_information.Designer.cs">
+      <DependentUpon>movie6_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panelty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelty.Designer.cs">
+      <DependentUpon>panelty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poster.Designer.cs">
+      <DependentUpon>poster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seat.Designer.cs">
+      <DependentUpon>seat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="snack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="snack.Designer.cs">
+      <DependentUpon>snack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="snackcash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="snackcash.Designer.cs">
+      <DependentUpon>snackcash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="time.Designer.cs">
+      <DependentUpon>time.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="agree.resx">
+      <DependentUpon>agree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="card.resx">
+      <DependentUpon>card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cash.resx">
+      <DependentUpon>cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hyengum.resx">
+      <DependentUpon>hyengum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie1_information.resx">
+      <DependentUpon>movie1_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie2_information.resx">
+      <DependentUpon>movie2_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie3_information.resx">
+      <DependentUpon>movie3_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie4_information.resx">
+      <DependentUpon>movie4_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie5_information.resx">
+      <DependentUpon>movie5_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie6_information.resx">
+      <DependentUpon>movie6_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelty.resx">
+      <DependentUpon>panelty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poster.resx">
+      <DependentUpon>poster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="seat.resx">
+      <DependentUpon>seat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="snack.resx">
+      <DependentUpon>snack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="snackcash.resx">
+      <DependentUpon>snackcash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="time.resx">
+      <DependentUpon>time.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KakaoTalk_20210714_171224964.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\랑종.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\블랙위도우.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\스파이더맨.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\이스케이프룸2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\콰이어트플레이스2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\크루엘라.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cgv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\감튀.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\나초.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\맛밤.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\소떡소떡.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\앤티앤스 프레즐.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\츄러스.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\치즈볼.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\콜팝.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\팝콘.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\핫도그.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
